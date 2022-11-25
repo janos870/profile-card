@@ -1,0 +1,249 @@
+/* .head{
+    background-color: cadetblue;
+}
+
+.name-headline{
+    background-color: burlywood;
+}
+
+.contact{
+    background-color: darkgray;
+}
+
+.links{
+    background-color: darkkhaki;
+}
+
+.card{
+    background-color: antiquewhite;
+}
+ */
+ *{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 500px;
+    max-width: calc(100vw-50px);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    overflow-y: auto;
+}
+
+
+.profile-image{
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    background-color: cadetblue;
+    margin-top: -100px;
+    object-fit: cover;
+
+    
+}
+
+.head{
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.head h2{
+    font-size: 1.5em;
+}
+
+.head span{
+    font-size: 1.2em;
+}
+
+.head p{
+    font-size: 1.5em;
+    position: relative;
+    right: 5px;
+    
+}
+
+.head i{
+    position: relative;
+    top: -2px;
+    right: 3px;
+}
+
+.contact{
+    padding: 10px;
+    
+}
+
+.contact h2{
+    font-size: 1.6em;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact h3{
+    font-size: 1.4em;
+}
+
+.contact p{
+    font-size: 1.2em;
+    border-bottom: 1px solid gray;
+    margin-inline: 12%;
+}
+
+.contact i{
+    color: rgb(86, 116, 86);
+    opacity: 1.5;
+    position: relative;
+    bottom: -20px;
+    padding-left: 5px;
+}
+
+.footer{
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+    padding: 10px;
+}
+
+li i{
+    color: rgb(125, 129, 124);
+    opacity: 10;
+}
+
+li i:hover{
+    color: rgb(2, 41, 2);
+}
+            /*profile image transform*/
+img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+img{
+    filter: grayscale(50%);
+}
+
+img:hover{
+    filter: grayscale(20%);
+}
+
+        /*footer links tranform*/
+
+.scale-1:hover{
+    transform: scale(1.3);
+}
+.scale-2:hover{
+    transform: scale(1.3);
+}
+.scale-3:hover{
+    transform: scale(1.3);
+}
+.scale-4:hover{
+    transform: scale(1.3);
+}
+
+        /*body background image*/
+
+body{
+    background-image: url('assets/background-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+}
+
+.card{
+    box-shadow: rgba(199, 215, 207, 0.8) 20px 10px 80px;
+}
+
+.head{
+    background-color: rgba(0, 1, 1, 0.8);
+    color: azure;
+    
+}
+
+.contact{
+    background-color: rgba(107, 116, 113, 0.6);
+}
+
+.name-headline h3{
+    padding-bottom: 20px;
+}
+
+.name-headline i{
+    color: rgb(9, 94, 41);
+}
+
+.footer{
+    background-color: rgba(205, 196, 196, 0.8);
+}
+
+.card{
+    border-radius: 20px;
+    padding: 2px;
+    background-color: rgb(205, 235, 193);
+}
+
+.footer{
+    border-top: 2px solid;
+    border-width: 
+}
+
+@media screen and (max-width: 600px) {
+    .card{width: auto;}
+    .contact p{
+        position: relative;
+        left: 20px;
+        font-size: 1rem;
+    }
+    .contact h3 {
+        font-size: 1.1rem;
+    }
+    .name-headline h1{
+        font-size: 1.5rem;
+    }
+    .name-headline h2{
+        font-size: 1.1rem;
+    }
+    .name-headline p{
+        font-size: 1.1rem;
+    }
+    .contact h2{
+        font-size: 1.3rem;
+    }
+    .links i{
+        width: 27px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        margin-top: -85px;
+    }
+}
