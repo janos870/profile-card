@@ -252,3 +252,12 @@ body{
         margin-top: -85px;
     }
 }
+@media (prefer-color-sheme: dark){
+    html body{
+        background-color: #000000;
+        color: white;
+        opacity: 0.5;
+    
+        
+    }
+}
