@@ -52,8 +52,7 @@ img{
     background-color: rgb(7, 121, 252);
     margin-top: -100px;
     object-fit: cover;
-
-    
+    opacity: 1;   
 }
 
 .head{
@@ -176,8 +175,11 @@ img:hover{
 body{
     background-image: url('assets/background-image.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(213, 225, 234);
+    opacity: 0.6;
     
 }
 
@@ -194,7 +196,7 @@ body{
 }
 
 .contact{
-    background-color: rgba(128, 197, 236, 0.6);
+    background-color: rgba(143, 204, 239, 0.6);
 }
 
 .name-headline h3{
@@ -256,7 +258,7 @@ body{
     html body{
         background-color: #000000;
         color: white;
-        opacity: 0.5;
+        opacity: 0.4;
     
         
     }
