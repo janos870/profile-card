@@ -35,7 +35,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 100vh;
     overflow-y: hidden;
    /*  background-image: url('assets/background-image.jpg'); */
     background-repeat: no-repeat;
@@ -216,7 +216,7 @@ img:hover{
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 3rem;
+    margin: 1rem;
     animation-name: brand-logo;
     animation-duration: 20s;
     animation-direction: alternate-reverse;
