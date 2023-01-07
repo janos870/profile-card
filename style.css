@@ -36,35 +36,40 @@ body{
     justify-content: center;
     align-items: center;
     height: 110vh;
-    overflow-y: auto;
+    overflow-y: hidden;
+   /*  background-image: url('assets/background-image.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(213, 225, 234);
+    opacity: 0.6;
+    background-image: linear-gradient(to right, #cfb53b, #000000 );
+    opacity: 0.8;
 }
-
-
 .profile-image{
     text-align: center;
 }
-
 img{
     border-radius: 50%;
     width: 180px;
     height: 180px;
     padding: 2px;
-    background-color: rgb(7, 121, 252);
+    background-color: #cfb53b;
     margin-top: -100px;
     object-fit: cover;
     opacity: 1;   
 }
-
 .head{
     text-align: center;
     padding: 10px;
     margin: auto;
-    
 }
 
 h1{
     font-size: 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 .head h2{
@@ -79,7 +84,6 @@ h1{
     font-size: 1.5em;
     position: relative;
     right: 5px;
-    
 }
 
 .head i{
@@ -170,33 +174,20 @@ img:hover{
     transform: scale(1.1);
 }
 
-        /*body background image*/
-
-body{
-    background-image: url('assets/background-image.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: rgb(213, 225, 234);
-    opacity: 0.6;
-    
-}
-
 .card{
-    box-shadow: rgba(160, 221, 241, 0.5) 10px 10px 80px;
+    box-shadow: rgba(39, 38, 38, 0.5) 10px 10px 80px;
 }
 
 .head{
     background-color: rgba(0, 0, 0, 0.8);
-    color: azure;
+    color: white;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
     
 }
 
 .contact{
-    background-color: rgba(143, 204, 239, 0.6);
+    background-color: white ;
 }
 
 .name-headline h3{
@@ -212,9 +203,8 @@ body{
 }
 
 .card{
-    
     padding: 2px;
-    background-color: rgb(255, 255, 255);
+    background-color: #cfb53b;
 }
 
 .footer{
@@ -222,9 +212,30 @@ body{
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
 }
+.logo-content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 3rem;
+    animation-name: brand-logo;
+    animation-duration: 20s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 1;
+}
+.logo-content img{
+    border-radius: 40%;
+}
+@keyframes brand-logo{
+    0% {right: 0;}
+    50% {right: 300px;}
+    100% {right: 600px;}
+}
 
 @media screen and (max-width: 600px) {
-    .card{width: auto;}
+    .card{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     .contact p{
         position: relative;
         left: 20px;
@@ -253,13 +264,31 @@ body{
         height: 150px;
         margin-top: -85px;
     }
+    .logo-content{
+        position: absolute;
+        right: 0;
+        margin: 0;
+        margin-right: 0.2rem;
+        animation-name: brand-logo;
+        animation-duration: 20s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: 1;
+    }
+    .logo-content img{
+        border-radius: 40%;
+        width: 5rem;
+        height: 5rem;
+    }
+    @keyframes brand-logo{
+        0% {right: 0;}
+        50% {right: 100px;}
+        100% {right: 200px;}
+    }
 }
 @media (prefer-color-sheme: dark){
     html body{
         background-color: #000000;
         color: white;
         opacity: 0.4;
-    
-        
     }
 }
